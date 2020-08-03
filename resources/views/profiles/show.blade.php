@@ -22,7 +22,7 @@
                     <strong>5</strong> abonnements
                 </div>
             </div>
-            <a href="#" class="btn btn-outline-secondary mt-2">Modifier mes informations de profil</a>
+            <a href=" {{ route('profiles.edit', ['user' => $user->username])}} " class="btn btn-outline-secondary mt-2">Modifier mes informations de profil</a>
             <div class="mt-3">
                 <div class="font-weight-bold">{{ $user->profile->title }}</div>
                 <div>{{ $user->profile->description }}.</div>
